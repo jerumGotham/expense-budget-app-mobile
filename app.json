@@ -8,6 +8,7 @@
     "scheme": "laraexpensesbudgetapp",
     "userInterfaceStyle": "automatic",
     "ios": {
+      "bundleIdentifier": "com.jerum.laraexpensesbudgetapp",
       "icon": "./assets/expo.icon"
     },
     "android": {
@@ -19,26 +20,16 @@
       },
       "predictiveBackGestureEnabled": false
     },
-    "web": {
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
+    "extra": {
+      "eas": {
+        "projectId": "7f267ddd-0784-40ed-9ce0-36f4d60604a3"
+      }
     },
-    "plugins": [
-      "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "backgroundColor": "#208AEF",
-          "android": {
-            "image": "./assets/images/splash-icon.png",
-            "imageWidth": 76
-          }
-        }
-      ]
-    ],
-    "experiments": {
-      "typedRoutes": true,
-      "reactCompiler": true
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/7f267ddd-0784-40ed-9ce0-36f4d60604a3"
     }
   }
 }
